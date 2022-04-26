@@ -8,7 +8,6 @@ public class ShouldGetAllPokemons {
     public void shouldGetDittoPokemon() {
         when()
                 .get("https://pokeapi.co/api/v2/pokemon/ditto")
-                .prettyPeek()
                 .then()
                 .statusCode(HttpStatus.SC_OK);
     }
